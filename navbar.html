@@ -20,7 +20,6 @@
         .navbar {
             background-color: rgba(255, 105, 180, 0.8);
             padding: 20px 30px;
-            /* Increased padding for larger size */
             position: fixed;
             top: 0;
             width: 100%;
@@ -31,7 +30,6 @@
             list-style: none;
             display: flex;
             gap: 30px;
-            /* Increased gap between items */
             margin: 0;
             padding: 0;
             align-items: center;
@@ -45,7 +43,6 @@
             text-decoration: none;
             color: white;
             font-size: 26px;
-            /* Increased font size */
             font-weight: bold;
             transition: color 0.3s ease;
         }
@@ -56,7 +53,6 @@
 
         .icon {
             font-size: 34px;
-            /* Increased icon size */
             display: flex;
             align-items: center;
         }
@@ -76,43 +72,31 @@
         #about {
             background-color: rgba(123, 147, 225, 0.6);
             text-align: center;
-            /* Center-align text */
             padding: 50px 20px;
-            /* Add padding for better spacing */
             border-radius: 15px;
-            /* Add rounded corners */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            /* Add subtle shadow */
         }
 
         #about h2 {
             font-size: 42px;
-            /* Bigger heading size */
             font-weight: bold;
             color: #fff;
-            /* White color for heading */
             text-transform: uppercase;
-            /* Make text uppercase */
             margin-bottom: 30px;
         }
 
         #about p {
             font-size: 20px;
-            /* Larger paragraph text size */
             color: #f0f8ff;
-            /* Light color for paragraphs */
             line-height: 1.8;
-            /* Better spacing */
             margin-bottom: 20px;
             font-style: italic;
-            /* Italicize text for elegance */
         }
 
         #tokenomics {
             background-color: rgba(34, 193, 195, 0.7);
         }
 
-        /* Section Headings */
         .section h2 {
             font-size: 36px;
             font-weight: bold;
@@ -122,6 +106,71 @@
         .section p {
             font-size: 16px;
             line-height: 1.6;
+        }
+
+        /* Mobile-Friendly Adjustments */
+        @media (max-width: 768px) {
+            .navbar-menu {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px;
+            }
+
+            .navbar-menu li {
+                margin-bottom: 10px;
+            }
+
+            .icon {
+                font-size: 30px;
+            }
+
+            .icon img {
+                width: 30px;
+                height: 30px;
+            }
+
+            .nav-link {
+                font-size: 22px;
+            }
+
+            .section {
+                padding: 40px 10px;
+            }
+
+            #about h2 {
+                font-size: 36px;
+            }
+
+            #about p {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-link {
+                font-size: 20px;
+            }
+
+            .navbar-menu li {
+                margin-bottom: 5px;
+            }
+
+            .icon {
+                font-size: 28px;
+            }
+
+            .icon img {
+                width: 25px;
+                height: 25px;
+            }
+
+            #about h2 {
+                font-size: 30px;
+            }
+
+            #about p {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
@@ -154,11 +203,9 @@
 
     <!-- Home Section -->
     <div id="home" class="section">
-
     </div>
 
     <div id="about" class="section">
-
         <p>🎭 Inspired by the gripping South Korean series, our token incorporates the intense drama of SQUID GAME 2,
             bringing you into a world of financial challenges, strategic gameplay, and heart-pounding excitement.</p>
         <p>💰 Looking for a money-making opportunity? You're in the right place! Our token combines the allure of
@@ -168,11 +215,8 @@
             AN EXPERIENCE! 🚀🎮💸</p>
     </div>
 
-
-
     <!-- Tokenomics Section -->
     <div id="tokenomics" class="section">
-
     </div>
 </body>
 
